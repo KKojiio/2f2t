@@ -3,21 +3,68 @@
     padding: 0;
 }
 
-.menu {
+a {
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.header {
     width: 100%;
-    height: 50px;
-    background: rgb(50, 107, 53);
+    background: rgb(111, 161, 113);
     color: white;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    display: inline-block;
+    color: white;
+}
+
+#logo {
+    width: 10vh;
+    margin: 5px;
+}
+
+.nav {
+    max-width: 0;
+    transition: max-height .5s ease-out;
+}
+
+.hamburger {
+    cursor: pointer;
+    float: right;
+    padding: 35px 20px;
+}
+
+.hamb-line {
+    background-color: rgb(255, 255, 255);
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
 }
 
 .conteudo {
     width: 100%;
 }
 
+.menu a {
+    display: block;
+    padding: 30px;
+    color: rgb(240, 220, 166);
+}
+.menu a:hover {
+    background: rgb(175, 173, 163);
+}
+
 .rodape {
     width: 100%;
     text-align: center;
-    background-color: rgb(2, 43, 2);
+    background-color:rgb(111, 161, 113);
     color: white;
 }
 
@@ -28,7 +75,7 @@
 @media screen and (min-width: 768px) {
     .menu {
         height: 70px;
-        background-color: rgb(2, 43, 2);
+        background-color: rgb(111, 161, 113);
     }
     .conteudo-home {
         display: flex;
@@ -37,6 +84,6 @@
 @media screen and (min-width: 1280px) {
     .menu {
         height: 90px;
-        background-color: rgb(2, 43, 2);
+        background-color: rgb(111, 161, 113);
     }
 }
