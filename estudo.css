@@ -21,28 +21,40 @@ body {
     grid-template-columns: 20% 20% 20% 20% 20%;
 }
 
-.caixa {
-    display: grid;
-}
 
 .barra {
-    background-color: rgb(166, 115, 190);
-    height: 20vh;
+    background-color: rgb(3, 53, 10);
+    height: 10vh;
+    grid-area: barra;
 }
 
 
 
 .lado{
-    background-color: rgb(166, 115, 200);
-    height: 20vh;
+    background-color: rgb(77, 194, 77);
+    height: 80vh;
+    grid-area: lado;
 }
 
 .principal{
-    background-color: rgb(97, 167, 233);
-    height: 50vh;
+    background-color: rgb(111, 145, 110);
+    height: 80vh;
+    grid-area: principal;
 }
 
 .rodape {
-    background-color: rgb(247, 113, 229);
+    background-color: rgb(140, 247, 113);
     height: 10vh;
+    grid-area: rodape;
+}
+
+.meu-site {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: 
+                    "barra barra"
+                    "lado principal"
+                    "rodape rodape";
+
+
 }
