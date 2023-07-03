@@ -124,20 +124,6 @@ ul{
     color: white;
 }
 
-.conteudo {
-    background-color:rgb(231, 215, 192);
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-areas: "geral";
-}
-<br>
-.geral {
-    width: 100vw;
-    grid-area: "geral";
-}
-
-
-/* Responsiveness */
 @media (min-width: 600px) {
     .nav{
         max-height: none;
@@ -202,15 +188,4 @@ ul{
     grid-template-areas: 
     "geral geral geral";
 }
-}
-
-.item1 {
-    display: flex;
-    justify-content: center;
-}
-
-.item3 {
-    display: flex;
-    justify-content: center;
-    
 }
