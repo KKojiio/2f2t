@@ -53,7 +53,7 @@ ul{
 .menu a{
     display: block;
     padding: 30px;
-    color: rgb(240, 220, 166);
+    color: rgb(238, 184, 83);
 }
 .menu a:hover{
     background-color: rgb(175, 173, 163);
@@ -130,7 +130,7 @@ ul{
     grid-template-columns: 100%;
     grid-template-areas: "geral";
 }
-<br>
+
 .geral {
     width: 100vw;
     grid-area: "geral";
@@ -213,4 +213,9 @@ ul{
     display: flex;
     justify-content: center;
     
+}
+
+.item5 {
+    display: flex;
+    justify-content: center;
 }
