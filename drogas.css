@@ -21,8 +21,8 @@ ul{
 /* Header */
 
 .header{
-    background-color: rgb(204, 223, 221);
-    box-shadow: 1px 1px 5px 0px rgb(36, 90, 85);
+    background-color: rgb(48, 119, 112);
+    box-shadow: 1px 1px 5px 0px rgb(48, 119, 112);
     position: sticky;
     top: 0;
     width: 100%;
@@ -53,7 +53,7 @@ ul{
 .menu a{
     display: block;
     padding: 30px;
-    color: rgb(238, 184, 83);
+    color: rgb(240, 239, 173);
 }
 .menu a:hover{
     background-color: rgb(175, 173, 163);
@@ -71,7 +71,7 @@ ul{
 }/* Style label tag */
 
 .hamb-line {
-    background: rgb(36, 90, 85);
+    background: rgb(233, 232, 177);
     display: block;
     height: 2px;
     position: relative;
@@ -81,7 +81,7 @@ ul{
 
 .hamb-line::before,
 .hamb-line::after{
-    background: rgb(36, 90, 85);
+    background: rgb(233, 232, 177);
     content: '';
     display: block;
     height: 100%;
@@ -117,12 +117,12 @@ ul{
     top:0;
 }
 
-.conteudo {
+.conteudo-droga {
     width: 100vw;
     padding: 7px;
 }
 
-#img-geral {
+#img-def {
     display: none;
 }
 
@@ -141,7 +141,12 @@ ul{
     color: white;
 }
 
-.conteudo {
+.definicao {
+    display: block;
+    width: 100vw;
+}
+
+.conteudo-droga {
     background-color:rgb(231, 215, 192);
     display: grid;
     grid-template-columns: 50% 50%;
@@ -153,6 +158,16 @@ ul{
     grid-area: "geral";
 }
 
+div[class^="item-"]{
+    background-color: rgb(240, 140, 26);
+    height: 200px;
+    margin: 5px;
+    grid-area: "info";
+}
+
+.info {
+    display: grid;
+}
 
 /* Responsiveness */
 @media (min-width: 820px) {
@@ -181,13 +196,8 @@ ul{
         width: 10vh;
         margin: 4px;
     }
-    .conteudo {
-    grid-template-columns: 50% 50%;
-    grid-template-areas: 
-    "geral geral";
-    }
     
-    .conteudo {
+    .conteudo-droga {
         display: flex;
         width: 100vw;
     }
@@ -205,10 +215,15 @@ ul{
         width: 75vw;
     }
 
-    #img-geral {
+    #img-def {
         display: block;
-        width: 50%;
+        width: 200px;
     }
+    .info {
+        grid-template-columns: 50% 50%;
+        grid-area: "item" "item";
+    }
+    
 }
 
 @media (min-width: 1024px) {
@@ -237,13 +252,13 @@ ul{
         width: 12vh;
         margin: 5px;
     }
-    .conteudo {
+    .info {
     grid-template-columns: 33% 34% 33%;
     grid-template-areas: 
-    "geral geral geral";
+    "item item item";
     }
 
-    .conteudo {
+    .conteudo-droga {
         display: flex;
         width: 100vw;
     }
@@ -261,9 +276,9 @@ ul{
         width: 50vw;
     }
 
-    #img-geral {
+    #img-def {
         display: block;
-        width: 50%;
+        width: 400px;
     }
 
 }
