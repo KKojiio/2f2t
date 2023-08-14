@@ -159,13 +159,13 @@ ul{
 }
 
 div[class^="item-"]{
-    background-color: rgb(240, 140, 26);
+    background-color: rgb(231, 200, 59);
     height: 200px;
     margin: 3px;
     grid-area: "info";
 }
 .item-1 {
-    text-align: justify;
+    text-align: center;
 }
 
 .item-2 {
@@ -178,11 +178,20 @@ div[class^="item-"]{
     text-align: center;
 }
 .item-5 {
-    text-align: center;
+    text-align: justify;
     
 }
-.item-6 {
-    text-align: center;
+.table {
+    display:grid;
+    grid-template-columns: auto auto;
+}
+
+.col1 {
+    background-color: rgb(176, 127, 255);
+}
+
+.col12 {
+    background-color: rgb(255, 16, 16);
 }
 
 .info {
